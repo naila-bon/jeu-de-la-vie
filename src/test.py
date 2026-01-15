@@ -72,8 +72,9 @@ class TestJeuDeLaVie(unittest.TestCase):
         jeu.add_cell(0,1)
         jeu.add_cell(2,2)
 
-        print(jeu.grid)
         jeu.run()
-        print(jeu.grid)
         
         self.assertEqual(jeu.grid[1][1], 1)
+
+if __name__ == "__main__":
+    unittest.main()
